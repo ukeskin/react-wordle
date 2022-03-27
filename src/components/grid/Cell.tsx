@@ -45,12 +45,12 @@ export const Cell = ({
   )
 
   return (
-    <div
-      className={classes}
-      aria-label={`${status}`}
-      style={{ animationDelay }}
-    >
-      <div className="letter-container" style={{ animationDelay }}>
+    <div className={classes} style={{ animationDelay }}>
+      <div
+        aria-label={`${status}`}
+        className="letter-container"
+        style={{ animationDelay }}
+      >
         {value}
       </div>
     </div>
