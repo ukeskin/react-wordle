@@ -45,12 +45,9 @@ export const Cell = ({
   )
 
   return (
-    <div
-      className={classes}
-      style={{ animationDelay }}
-      aria-label={`${status} Letter ${value} at position ${position}`}
-    >
+    <div className={classes} style={{ animationDelay }}>
       <div
+        aria-static="false"
         aria-label={`${status} Letter ${value} at position ${position}`}
         className="letter-container"
         style={{ animationDelay }}
