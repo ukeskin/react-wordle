@@ -10,7 +10,7 @@ type Props = {
 export const CompletedRow = ({ guess, isRevealing }: Props) => {
   const statuses = getGuessStatuses(guess)
   const splitGuess = unicodeSplit(guess)
-
+  console.log(splitGuess)
   return (
     <div className="flex justify-center mb-1">
       {splitGuess.map((letter, i) => (
