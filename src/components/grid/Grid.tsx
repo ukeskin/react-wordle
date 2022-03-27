@@ -25,7 +25,6 @@ export const Grid = ({
     <>
       {guesses.map((guess, i) => (
         <CompletedRow
-          aria-label={`Completed guess ${i + 1}`}
           key={i}
           guess={guess}
           isRevealing={isRevealing && guesses.length - 1 === i}
